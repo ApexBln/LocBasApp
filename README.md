@@ -1,1 +1,1 @@
-# Anwendung für das Modul Location-Based-App / Beuth 2018
+# Modul: Location-Based-App / Beuth 2018
