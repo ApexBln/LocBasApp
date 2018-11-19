@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">THW_MENMS</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_Op1">Einsatzbereit</string>
+    <string name="title_Op2">Übernehmen</string>
+    <string name="title_Op3">Einsatzort erreicht</string>
+    <string name="title_buttonEinsatzDialog">Einsatz</string>
+    <string name="title_buttonSprechwunsch">Sprech Wunsch</string>
+    <string name="Button_1">Funktion 1</string>
+    <string name="Button_2">Funktion 2</string>
+    <string name="Button_3">Funktion 3</string>
+    <string name="Button_4">Funktion 4</string>
+    <string name="Button_5">Funktion 5</string>
 </resources>

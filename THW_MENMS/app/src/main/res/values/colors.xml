@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#0039ac</color>
+    <color name="colorPrimaryDark">#e8e3dd</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="thwBlue">#0039ac</color>
+    <color name="thwBackgroundGrey">#f7f0ea</color>
+    <color name="thwButtonGrey">#e8e3dd</color>
+    <color name="White">#ffffff</color>
 </resources>

@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parentContainer"
+    android:name=".MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="landscape"
     tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="73dp"
-    android:name=".MainActivity" android:screenOrientation="landscape">
+    tools:layout_editor_absoluteY="73dp">
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:mapbox="http://schemas.android.com/apk/res-auto"
@@ -40,47 +41,114 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/menuContainer"
-        android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHeight_percent=".25">
+        app:layout_constraintEnd_toStartOf="@+id/infoContainer"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".75">
 
-        <android.support.design.widget.BottomNavigationView
-            android:id="@+id/menuView"
-            android:layout_width="match_parent"
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="?android:attr/windowBackground"
-            app:menu="@menu/navigation" />
+            android:text="@string/Button_1"
+            style="@style/mainButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent=".20" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/Button_2"
+            style="@style/mainButton"
+            app:layout_constraintStart_toEndOf="@+id/button1"
+            app:layout_constraintWidth_percent=".20" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/Button_3"
+            style="@style/mainButton"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintWidth_percent=".20" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/Button_4"
+            style="@style/mainButton"
+            app:layout_constraintStart_toEndOf="@+id/button3"
+            app:layout_constraintWidth_percent=".20" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/Button_5"
+            style="@style/mainButton"
+            app:layout_constraintStart_toEndOf="@+id/button4"
+            app:layout_constraintWidth_percent=".20"  />
+
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/infoContainer"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/menuContainer"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".75"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent=".25">
 
         <CalendarView
-            android:id="@+id/calendarView2"
+            android:id="@+id/calendarView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="0dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent=".75"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="date" />
+    </android.support.constraint.ConstraintLayout>
 
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="time" />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/hotButtonContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25">
+
+        <Button
+            android:id="@+id/buttonEinsatzDialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/mainButton"
+            android:text="@string/title_buttonEinsatzDialog" />
+
+        <Button
+            android:id="@+id/buttonSprechwunsch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/title_buttonSprechwunsch"
+            style="@style/mainButton" />
+
+
     </android.support.constraint.ConstraintLayout>
 
 
