@@ -1,0 +1,24 @@
+#coordinates{
+	
+	float:right;
+	width: 35%;
+	height: 80%;
+	margin-bottom: 1em;
+}
+
+#HeadContainer{
+	
+	text-align: center;
+	
+	
+}
+
+
+#map{
+	position:absolute;
+	float:left;
+	width: 60%;
+	height: 80%;
+	margin-bottom: 1em;
+	
+}
