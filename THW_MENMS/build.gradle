@@ -4,6 +4,7 @@ buildscript {
     
     repositories {
         mavenCentral()
+        maven { url 'https://mapbox.bintray.com/mapbox' }
         google()
         jcenter()
     }
@@ -19,6 +20,7 @@ buildscript {
 allprojects {
     repositories {
         mavenCentral()
+        maven { url 'https://mapbox.bintray.com/mapbox' }
         google()
         jcenter()
     }

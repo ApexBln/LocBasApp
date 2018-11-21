@@ -1,8 +1,6 @@
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -12,6 +10,12 @@
         <item name="android:textColor">@color/White</item>
         <item name="android:textSize">12sp</item>
         <item name="backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="navButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">12sp</item>
+        <item name="backgroundTint">@color/thwButtonGrey</item>
     </style>
 
 </resources>

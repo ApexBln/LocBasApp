@@ -53,48 +53,48 @@
 
         <Button
             android:id="@+id/button1"
+            style="@style/mainButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="@string/Button_1"
-            style="@style/mainButton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintWidth_percent=".20" />
 
         <Button
             android:id="@+id/button2"
+            style="@style/mainButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="@string/Button_2"
-            style="@style/mainButton"
             app:layout_constraintStart_toEndOf="@+id/button1"
             app:layout_constraintWidth_percent=".20" />
 
         <Button
             android:id="@+id/button3"
+            style="@style/mainButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="@string/Button_3"
-            style="@style/mainButton"
             app:layout_constraintStart_toEndOf="@+id/button2"
             app:layout_constraintWidth_percent=".20" />
 
         <Button
             android:id="@+id/button4"
+            style="@style/mainButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="@string/Button_4"
-            style="@style/mainButton"
             app:layout_constraintStart_toEndOf="@+id/button3"
             app:layout_constraintWidth_percent=".20" />
 
         <Button
             android:id="@+id/button5"
+            style="@style/mainButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="@string/Button_5"
-            style="@style/mainButton"
             app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintWidth_percent=".20"  />
+            app:layout_constraintWidth_percent=".20" />
 
     </android.support.constraint.ConstraintLayout>
 
@@ -105,13 +105,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintWidth_percent=".25">
 
-        <CalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/startNavigation"
+            style="@style/mainButton"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:enabled="false"
+            android:text="@string/Button_startNav"
             app:layout_constraintHeight_default="percent"
-            app:layout_constraintHeight_percent=".75"
+            app:layout_constraintHeight_percent=".15"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/resetNavigation"
+            style="@style/mainButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/Button_resetNav"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent=".15"
+            app:layout_constraintTop_toBottomOf="@+id/startNavigation" />
 
     </android.support.constraint.ConstraintLayout>
 
@@ -128,25 +141,25 @@
 
         <Button
             android:id="@+id/buttonEinsatzDialog"
+            style="@style/mainButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            app:layout_constraintWidth_default="percent"
-            app:layout_constraintWidth_percent=".50"
+            android:text="@string/title_buttonEinsatzDialog"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            style="@style/mainButton"
-            android:text="@string/title_buttonEinsatzDialog" />
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".50" />
 
         <Button
             android:id="@+id/buttonSprechwunsch"
+            style="@style/mainButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            app:layout_constraintWidth_default="percent"
-            app:layout_constraintWidth_percent=".50"
+            android:text="@string/title_buttonSprechwunsch"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="@string/title_buttonSprechwunsch"
-            style="@style/mainButton" />
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".50" />
 
 
     </android.support.constraint.ConstraintLayout>

@@ -10,4 +10,10 @@
     <string name="Button_3">Funktion 3</string>
     <string name="Button_4">Funktion 4</string>
     <string name="Button_5">Funktion 5</string>
+    <string name="Button_startNav">Start Navigation</string>
+    <string name="Button_resetNav">Reset Navigation</string>
+    <string name="user_location_permission_explanation">Zugriff erlaubt?</string>
+    <string name="user_location_permission_not_granted">Nope?</string>
+
+    <string name="access_token" translatable="false">pk.eyJ1IjoiZnJhZ2lsaXplciIsImEiOiJjam82ejBvejEwbzlxM3FvYmhtMnlidW90In0.pwBUcJ8OqQb07kQQG6dBNw</string>
 </resources>
